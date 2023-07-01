@@ -15,5 +15,5 @@
 }
 
 .hero img{
-  @apply object-cover md:h-[100%] relative
+  @apply object-cover md:h-[100%] !relative
 }
