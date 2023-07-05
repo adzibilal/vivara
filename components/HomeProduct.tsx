@@ -2,7 +2,15 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import products, { Product } from '@/constants/productsData'
+const formatPrice = (price: number): string => {
+    const formatter = new Intl.NumberFormat('id-ID', {
+        style: 'currency',
+        currency: 'IDR',
+        minimumFractionDigits: 0
+    })
 
+    return formatter.format(price)
+}
 const HomeProduct = () => {
     return (
         <div className='product-container w-full mt-20 mb-20'>
@@ -26,7 +34,7 @@ const HomeProduct = () => {
                             />
                             <div className='title-product'>{product.name}</div>
                             <div className='price-product text-xl font-semibold text-red-700'>
-                                Rp {product.price}
+                                {formatPrice(product.price)}
                             </div>
                         </div>
                     </Link>
