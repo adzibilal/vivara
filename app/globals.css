@@ -11,7 +11,7 @@
 }
 
 .container{
-  @apply max-w-screen-xl flex items-center justify-between p-2 mx-auto flex-col;
+  @apply max-w-screen-xl flex items-center justify-between p-10 md:p-2 mx-auto flex-col;
 }
 
 .hero img{
