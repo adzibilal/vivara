@@ -7,7 +7,7 @@
   @apply fixed top-0 w-full transition ease-in z-10
 }
 .navbar {
-  @apply max-w-screen-xl flex items-center justify-between p-2 mx-auto;
+  @apply max-w-screen-xl flex md:items-center justify-between flex-col md:flex-row px-10 py-2 md:p-2 mx-auto;
 }
 
 .container{

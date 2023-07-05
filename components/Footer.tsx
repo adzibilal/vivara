@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <div className='bg-black'>
             <div className='container'>
-                <div className='flex justify-between items-center w-full py-4'>
+                <div className='flex flex-col gap-3 md:flex-row justify-between md:items-center w-full py-4'>
                     <Image
                         src={'/logo-light.png'}
                         width={100}

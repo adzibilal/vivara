@@ -34,7 +34,7 @@ const Navbar = () => {
                         height={15}
                     />
                 </div>
-                <div className='flex items-center gap-4'>
+                <div className='items-center gap-4 hidden md:flex'>
                     <div className='ic-navbar text-sm'>
                         <FontAwesomeIcon icon={faSearch} width={18} />
                     </div>
